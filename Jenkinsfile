@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        string(name: 'TomcatURL', defaultValue: 'http://3.87.56.145:8080/', description: 'What is the tomcat IP?')
+        string(name: 'TomcatURL', defaultValue: 'http://44.204.6.196:8080/', description: 'What is the tomcat IP?')
         string(name: 'contextpath', defaultValue: 'sampleapp-dev', description: 'What is the context pat?')
     }
     tools {
