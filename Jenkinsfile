@@ -34,6 +34,7 @@ pipeline {
                 echo "deploying to Tomcat URL"
                 echo "${params.TomcatURL}"
                 echo "${params.contextpath}"
+                input ''
                 deploy adapters: [tomcat9(credentialsId: 'tomcat-deploy', path: '', url: "${params.TomcatURL}")], contextPath: "${params.contextpath}", onFailure: false, war: '**/*.war'
                 echo 'URL to access application is' 
                 echo "${params.TomcatURL}/${params.contextpath}"
