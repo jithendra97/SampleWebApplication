@@ -1,4 +1,1 @@
-first-commit
-skjddbks
-skjabksdnv
-sakjbckjsdv
+checking remote auto trigger
